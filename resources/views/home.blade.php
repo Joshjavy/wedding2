@@ -11,12 +11,11 @@
     <div class="pagecontent relative sm:w-full">
 
         <div class="flex w-full">
-            <div class="w-1/4 "><img src="{{ asset('imgs/Desktop/Recurso_desck_5_8_2.png') }}"
+            <div class="w-1/2 flex  justify-self-start " ><img src="{{ asset('imgs/Desktop/Recurso_desck_5_8_2.png') }}"
                     class="hojastopds relative divhojasdesk" /></div>
-                    <div class="w-5/12"></div>
 
-            <div class="w-5/12	"><img src="{{ asset('imgs/Mobile/Recurso_mb_6_8_2.png') }}"
-                    class="divhojasmb  hidden w-full" style="float: right!important;" />
+             <div class="w-1/2	flex justify-items-end">
+                <img src="{{ asset('imgs/Mobile/Recurso_mb_6_8_2.png') }}"class="divhojasmb  hidden " style="float: right!important;" />
             </div>
         </div>
 

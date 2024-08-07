@@ -82,7 +82,7 @@
         margin-top:1%;
       }
       .info{
-        padding-top:9rem;
+        padding-top:7rem;
         /* padding-bottom:5rem; */
         width: 100%;
         margin: auto!important;
@@ -92,7 +92,7 @@
         margin: auto;
       }
     }
-  }
+  
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
@@ -116,7 +116,7 @@
         width: 10%;
       }
       .info{
-        padding-top:9rem;
+        padding-top:12rem;
         
         width:90%;
         margin: auto!important;
@@ -150,7 +150,7 @@
         
       }
       .info{
-        padding-top:9rem;
+        padding-top:14rem;
         /* padding-bottom:5rem; */
         width:90%;
         margin: auto!important;
@@ -183,7 +183,7 @@
         width: 10%;
       }
       .info{
-        padding-top:0rem;
+        padding-top:14rem;
         /* padding-bottom:5rem; */
         width:90%;
         margin: auto!important;
@@ -215,7 +215,7 @@
         margin-top:1%;
       }
     .info{
-      padding-top:12rem;
+      padding-top:18rem;
       /* padding-bottom:5rem; */
       width: 100%;
       
@@ -245,7 +245,7 @@
       display: block;
     }
     .hojastopds{
-      width:80%;
+      width:35%;
     }
     .hojasbottompds{
       width:25%;
@@ -283,7 +283,7 @@
       display:block;
     }
     .hojastopds{
-      width: 80%;
+      width: 38%;
     }
     .hojasbottompds{
       width:18%;
