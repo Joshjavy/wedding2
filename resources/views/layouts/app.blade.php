@@ -82,7 +82,7 @@
         margin-top:1%;
       }
       .info{
-        padding-top:3rem;
+        padding-top:9rem;
         /* padding-bottom:5rem; */
         width: 100%;
         margin: auto!important;
@@ -116,9 +116,9 @@
         width: 10%;
       }
       .info{
-        padding-top:3rem;
-        /* padding-bottom:5rem; */
-        width: 80%;
+        padding-top:9rem;
+        
+        width:90%;
         margin: auto!important;
     }
     .emblema{
@@ -126,9 +126,43 @@
       margin: auto;
     }
   }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 700px) {
+    .imagemb{
+      height: 100vh; 
+    }
+    .divhojasmb{
+      display:block;
+    }
+    .divhojasdesk{
+      display:none;
+    }
+    .hojasbtbm{
+      display:block;
+      float: left; left:-5.3%;
+    }
+    .hojasbtDS{
+      display:none;
+    }
 
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
+    .hojastopmb{
+        width: 10%;
+        
+      }
+      .info{
+        padding-top:9rem;
+        /* padding-bottom:5rem; */
+        width:90%;
+        margin: auto!important;
+        left: 50%;
+        translate: -50%;
+    }
+    .emblema{
+      width: 76%;
+      margin: auto;
+    }
+  }
+  @media only screen and (min-width: 761) {
     .imagemb{
       height: 100vh; 
     }
@@ -144,20 +178,22 @@
     .hojasbtDS{
       display:none;
     }
+
     .hojastopmb{
         width: 10%;
       }
       .info{
-      padding-top:3rem;
-      /* padding-bottom:5rem; */
-      width: 100%;
-      
+        padding-top:0rem;
+        /* padding-bottom:5rem; */
+        width:90%;
+        margin: auto!important;
     }
     .emblema{
       width: 76%;
       margin: auto;
     }
   }
+  
   @media only screen and (min-width: 787px) {
     .imagemb{
       height: 100vh; 
@@ -179,7 +215,7 @@
         margin-top:1%;
       }
     .info{
-      padding-top:3rem;
+      padding-top:12rem;
       /* padding-bottom:5rem; */
       width: 100%;
       
@@ -203,6 +239,7 @@
     }
     .hojasbtDS{
       display:block;
+      float: right; right:-33%;
     }
     .divhojasdesk{
       display: block;
@@ -215,7 +252,10 @@
     }
     .info{
       /* padding-bottom:5rem; */
+      padding-top:9rem;
       width: 60%;
+      left: 50%;
+      translate: -50%;
       
     }
     .emblema{
@@ -249,13 +289,14 @@
       width:18%;
     }
     .hojasbtDS{
+      float: right; right:-50%;
     }
     .info{
       width: 50%;
       /* top:-250px; */
-      position: relative;
       /* z-index: 77; */
-      
+      left: 50%;
+      translate: -50%;
     }
     .emblema{
       width: 76%;
