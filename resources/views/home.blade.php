@@ -24,8 +24,8 @@
             <img src="{{ asset('imgs/emblema/Emblema_ANNI.png') }}" class="emblema" />
             <div class="text-center px-5 py-16">
                 <p class="SOUTH_CATALONIA">
-                    We’re getting married<br />
-                    and look forward to celebrating our wedding with you
+                    We’re getting married and look forward<br />
+                    to celebrating with you!
                 </p>
             </div>
             <div class=" text-center  py-16 ">
@@ -55,8 +55,8 @@
 
                     Please dress appropriately for the weather. <br /><br />
 
-                    Should you choose to wear heels, we recommend the ones<br />
-                    as the grass may be uneven.</p>
+                    If you choose to wear heels, we recommend chunky heels<br />
+                    as there will be uneven areas and grass.</p>
             </div>
 
             <div class=" text-center py-11 ">
@@ -88,8 +88,8 @@
 
                     This airport has non-stop flights to many cities in Europe and the US.<br /><br />
 
-                    Note that there are other satellite international airports in Mexico City,<br />
-                    however we do not recommend travelling to those</p>
+                    Please note that there are other satellite international airports in Mexico City,<br />
+                    but we do not recommend flying into them.</p>
             </div>
 
             <div class=" text-center py-10 ">
@@ -100,26 +100,19 @@
                 <p class="">
                     <span class="font-bold	text-left">Mexico City</span><br />
 
-                    If you are arriving early in Mexico City, we recommend staying in Polanco area.<br />This is a very
-                    popular central location with many accommodation,dining and shopping options. <br />
-                    A shuttle bus will be organised to transfer international guests from Mexico City to the wedding
-                    venue area. <br /> <br />The bus will depart on the 10 April 2025 from Polanco to the Santa Fe Golf
-                    Club estate.<br /> See below for accommodation options.<br /><br />
-                    We strongly recommend that you join the bus and travel to other guests as the wedding<br /> venue is
-                    2 hours away and travel by cab or other public transport will be very hard to predict.
+                    In Mexico City, we suggest staying in the Polanco area. This is a popular central suburb with plenty of accommodation options, restaurants, and shopping.<br><br>
+                    A shuttle bus will be arranged to transport international guests from Mexico City to the wedding venue.<br>
+                    The bus will depart on the morning of April 10, 2025 from Polanco to the Santa Fe Golf Club Estate.<br>
+                    Please see below for accommodation options.<br>
+                    We recommend that you join the bus and travel with other guests as the wedding venue is 2 hours away and getting to the destination by taxi or public transportation is tricky.
+
                 </p>
 
                 <p class="mt-10 pb-3 ">
                     <span class="font-bold	text-left">Wedding venue</span><br />
-                    We strongly recommend that you stay at the ‘Santa Fe Golf Club’ in Xochitepec, Morelos.<br /> This
-                    estate is 20 mins from the wedding venue and a shuttle will be organised to transfer you to and from
-                    on wedding day.
-                    <br /><br />
-                    Some of you may travel alone or with a +1 and renting an entire house may not cost effective. If
-                    this is your case, please let us know and we will try to match you with other guests to keep the
-                    cost affordable.
+                    We recommend that you stay at the 'Santa Fe Golf Club' in Xochitepec, Morelos. This estate is 20 minutes from the wedding venue and a shuttle will be arranged to transport you to and from the wedding venue. Some of you may be traveling alone or with a +1 and renting an entire house may not be cost effective. If this is the case for you, please let us know and we will try to match you with other guests to keep the cost affordable.<br><br>
 
-                    A few examples of homes available to rent within the estate:
+                    Some examples of available houses to rent within the property:
                 </p>
                 <a href="https://www.airbnb.com.au/rooms/16995395?viralityEntryPoint=1&unique_share_id=76204413-2F92-468D-9841-763619B23E64&slcid=9a645dc003ff4fb4aecd09db492c225b&s=76&feature=share&adults=1&channel=native&slug=r6ZmgTeI&source_impression_id=p3_1721122237_P3xpUGqjj4VS9rRp"
                     target="_blanck"
@@ -155,7 +148,7 @@
                 <img src="{{ asset('imgs/elementos/Detalle-anni.png') }}" class="w-6/12	 m-auto" />
             </div>
             <div class=" text-center py-10 ">
-                <p class="titulo text-5xl">Confirmación de Asistencia </p>
+                <p class="titulo text-5xl">RSVP your Attendance </p>
             </div>
 
 
@@ -167,7 +160,7 @@
                     autocomplete="off">
                     @csrf
                     <div class="relative z-0 w-full mb-5 group">
-                        <label class="color">All fields are required, minimun 2 characters!</label><br />
+                        <label class="color">All fields are required, minimum 2 characters.</label><br />
 
 
                     </div>
@@ -225,9 +218,9 @@
             <!--Fin de contenido !-->
             </div>
             <img src="{{ asset('imgs/Desktop/Recursodesck6_8.png') }}" class="relative z-50 w-5/12	 hojasbtDS" />
-        <img src="{{ asset('imgs/Mobile/Recurso_mb_5_8_2.png') }}" class="hojasbtbm relative z-50  hidden w-3/6" />    
+        <img src="{{ asset('imgs/Mobile/Recurso_mb_5_8_2.png') }}" class="hojasbtbm relative z-50  hidden w-3/6" />
         </div>
-        
+
     </div>
 
 
