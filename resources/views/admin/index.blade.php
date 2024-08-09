@@ -26,8 +26,8 @@
             <table id="table_id" class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                 <thead>
                   <tr>
-                    <th>firstname</th>
-                    <th>Surname</th>
+                    <th>firstname and Surname</th>
+                    <th>RSVP</th>
                     <th>Mobile</th>
                     <th>allergies</th>
                     <th>transport</th>

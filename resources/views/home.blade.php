@@ -10,16 +10,17 @@
 
     <div class="pagecontent relative sm:w-full">
 
-        <div class="flex w-full">
-            <div class="w-1/2 flex  justify-self-start " ><img src="{{ asset('imgs/Desktop/Recurso_desck_5_8_2.png') }}"
-                    class="hojastopds relative divhojasdesk" /></div>
+        <div class="flex w-full justify-end">
+            {{-- <div class="w-1/2 flex  justify-self-start " >
+                <img src="{{ asset('imgs/Desktop/Recurso_desck_5_8_2.png') }}" class="hojastopds relative hidden divhojasdesk" />
+            </div> --}}
 
-             <div class="w-1/2	flex justify-items-end">
-                <img src="{{ asset('imgs/Mobile/Recurso_mb_6_8_2.png') }}"class="divhojasmb  hidden " style="float: right!important;" />
+             <div class="divhojastop">
+                <img src="{{ asset('imgs/Mobile/Recurso_mb_6_8_2.png') }}" class="divhojasmb" />
             </div>
         </div>
 
-        <div class="info pt-10 absolute top-3 z-50  h-fit m-auto " style="height: 100%!important">
+        <div class="info pt-10 absolute top-3 z-50 m-auto " >
             <div>
                 <div class="flex justify-center px-5 py-16">
                     <img src="{{ asset('imgs/emblema/Emblema_ANNI.png') }}" class="emblema m-auto" />
@@ -152,6 +153,9 @@
             </div>
             <div class=" text-center py-10 ">
                 <p class="titulo text-5xl">RSVP your Attendance </p>
+                <p class="pt-16">
+                    Please RSVP by 30 September 2024
+                </p>
             </div>
 
 
@@ -168,7 +172,7 @@
 
                     </div>
                     <div class="relative z-0 w-full mb-5 group">
-                        <label for="Firstname" class="">First name</label><br />
+                        <label for="Firstname" class="">Name and surname</label><br />
                         <input type="text" name="Firstname" id="Firstname"
                             class="pl-1 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                             placeholder=" " required />
@@ -176,10 +180,9 @@
                     </div>
 
                     <div class="relative z-0 w-full mb-5 group">
-                        <label for="Surname" class="">Surname</label><br />
-                        <input type="text" name="Surname" id="Surname"
-                            class="pl-1 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                            placeholder=" " required />
+                        <label for="Surname" class="">If you would like to RSVP on behalf of other guests joining you, please enter their names below.</label><br />
+                        <textarea name="Surname" id="Surname" cols="30"  rows="4" class="pl-1 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"> </textarea>
+                        
                     </div>
 
                     <div class="relative z-0 w-full mb-5 group">
@@ -215,15 +218,18 @@
                             placeholder=" " required />
                     </div>
                     <button type="submit" id="procesar"
-                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CONFIRM</button>
+                       style="background-color: #95977F;" class="text-white bg-[#95977F]  font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CONFIRM</button>
                 </form>
             </div>
             <!--Fin de contenido !-->
             </div>
-            <img src="{{ asset('imgs/Desktop/Recursodesck6_8.png') }}" class="relative z-50 w-5/12	 hojasbtDS" />
-        <img src="{{ asset('imgs/Mobile/Recurso_mb_5_8_2.png') }}" class="hojasbtbm relative z-50  hidden w-3/6" />
+            {{-- <img src="{{ asset('imgs/Desktop/Recursodesck6_8.png') }}" class="relative z-50 w-5/12	 hojasbtDS" /> --}}
+            
+            <div class="divhojasbtn" style="position: relative; z-index:99; ">
+                <img src="{{ asset('imgs/Mobile/Recurso_mb_5_8_2.png') }}" class="hojasbtbm w-3/6" />
+            </div>
         </div>
-
+        
     </div>
 
 

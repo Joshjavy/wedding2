@@ -63,7 +63,16 @@
       height: 100vh;
     }
     .divhojasmb{
-      display:block;
+      position: relative;
+      le
+      
+    }
+    .divhojastop{
+      position: relative;
+      z-index: 100;
+      width: 60%;
+      float: right;
+      right: -2%;
     }
     .hojasbtbm{
       display:block;
@@ -102,11 +111,22 @@
     .divhojasmb{
       display:block;
     }
+    .divhojastop{
+      position: relative;
+      z-index: 100;
+      width: 60%;
+      float: left;
+    }
     .divhojasdesk{
       display:none;
     }
     .hojasbtbm{
       display:block;
+      width: 80%;
+    }
+
+    .divhojasbtn{
+      left:-51%;
     }
     .hojasbtDS{
       display:none;
@@ -139,7 +159,10 @@
     }
     .hojasbtbm{
       display:block;
-      float: left; left:-5.3%;
+      
+    }
+    .divhojasbtn{
+      left:-40%;
     }
     .hojasbtDS{
       display:none;
@@ -175,6 +198,10 @@
     .hojasbtbm{
       display:block;
     }
+    .divhojasbtn{
+      left:-40%;
+    }
+    
     .hojasbtDS{
       display:none;
     }
@@ -201,11 +228,22 @@
     .divhojasmb{
       display:block;
     }
+    .divhojastop{
+      position: relative;
+      z-index: 100;
+      width: 60%;
+      float: right;
+      right: -2%;
+    }
     .divhojasdesk{
       display:none;
     }
     .hojasbtbm{
       display:block;
+      width: 40%;
+    }
+    .divhojasbtn{
+      left:-0%;
     }
     .hojasbtDS{
       display:none;
@@ -232,10 +270,20 @@
       height: 100vh;
     }
     .divhojasmb{
-      display: none;
+      display: block;
     }
     .hojasbtbm{
-      display:none;
+      display:block;
+    }
+    .divhojastop{
+      position: relative;
+      z-index: 100;
+      width: 60%;
+      float: right;
+      right: -2%;
+    }
+    .divhojasbtn{
+      left:-45%;
     }
     .hojasbtDS{
       display:block;
@@ -271,13 +319,27 @@
       height: 100vh;
     }
     .divhojasmb{
-      display: none;
+      position: relative;
+      right: 0%;
+      float: right;
+    }
+    .divhojastop{
+      
+      position: relative;
+      z-index: 100;
+      width: 60%;
+      float: right;
     }
     .divhojasdesk{
-      display: block;
+      display: none;
     }
     .hojasbtbm{
-      display:none;
+      display:block;
+      position: relative;
+
+    }
+    .divhojasbtn{
+      left: -50%;
     }
     .hojasbtDS{
       display:block;
@@ -303,6 +365,17 @@
       margin: auto;
     }
 
+  }
+  @media only screen and (min-width: 1200) {
+    .hojasbtbm{
+      display:block;
+      position: relative;
+
+    }
+    .divhojasbtn{
+      left: -50%;
+    }
+    
   }
   .info{
     padding-bottom: 0%;
@@ -347,11 +420,11 @@
           $('.imagemb').css({'height':h+'px'})
           $('.imagemb').css({'width':w+'px'})
           //hojas
-          $('.divhojasmb').removeClass("hidden" )
-          $('.divhojasdesk').addClass("hidden" )
+          // $('.divhojasmb').removeClass("hidden" )
+          // $('.divhojasdesk').addClass("hidden" )
 
-          $('.hojasbtbm').removeClass("hidden" )
-          $('.hojasbtDS').addClass("hidden" )
+          // $('.hojasbtbm').removeClass("hidden" )
+          // $('.hojasbtDS').addClass("hidden" )
           $('.pagecontent').css({'height':hif+'px'})
 
 
@@ -359,11 +432,11 @@
           $('.imagebg').removeClass("hidden" )
           $('.imagemb').addClass("hidden" )
           //hojas
-          $('.divhojasmb').addClass("hidden" )
-          $('.divhojasdesk').removeClass("hidden" )
+          // $('.divhojasmb').addClass("hidden" )
+          // $('.divhojasdesk').removeClass("hidden" )
 
-          $('.hojasbtbm').addClass("hidden" )
-          $('.hojasbtDS').removeClass("hidden" )
+          // $('.hojasbtbm').addClass("hidden" )
+          // $('.hojasbtDS').removeClass("hidden" )
 
           $('.pagecontent').css({'height':hif+'px'})
 
@@ -382,11 +455,11 @@
 
 
             //hojas
-          $('.divhojasmb').removeClass("hidden" )
-          $('.divhojasdesk').addClass("hidden" )
+          // $('.divhojasmb').removeClass("hidden" )
+          // $('.divhojasdesk').addClass("hidden" )
 
-          $('.hojasbtbm').removeClass("hidden" )
-          $('.hojasbtDS').addClass("hidden" )
+          // $('.hojasbtbm').removeClass("hidden" )
+          // $('.hojasbtDS').addClass("hidden" )
 
 
           }else{
@@ -401,11 +474,11 @@
 
 
             //hojas
-            $('.divhojasmb').addClass("hidden" )
-            $('.divhojasdesk').removeClass("hidden" )
+            // $('.divhojasmb').addClass("hidden" )
+            // $('.divhojasdesk').removeClass("hidden" )
 
-            $('.hojasbtbm').addClass("hidden" )
-            $('.hojasbtDS').removeClass("hidden" )
+            // $('.hojasbtbm').addClass("hidden" )
+            // $('.hojasbtDS').removeClass("hidden" )
           }
 
       });

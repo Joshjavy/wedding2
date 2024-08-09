@@ -19,7 +19,6 @@ class RegistroController extends Controller
         $validator = Validator::make($request->only('Firstname','Surname','phone','allergies','rtransport','dance'),
                             [
                                 'Firstname'=>'required|min:2|max:45',
-                                'Surname'=>'min:2|max:45',
                                 'phone'=>'required|min:10|max:20',
                                 'allergies'=>'required|min:2|max:75',
                                 'rtransport'=>'required|min:2|max:20',
