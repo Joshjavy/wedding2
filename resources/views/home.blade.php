@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Wedding')
+@section('title', 'Wedding - Anni & Marco')
 
 @section('content')
     <img src="{{ asset('imgs/Desktop/FONDO_desck_Anni_invite_03.jpg') }}"
@@ -180,8 +180,24 @@
                     </div>
 
                     <div class="relative z-0 w-full mb-5 group">
-                        <label for="Surname" class="">If you would like to RSVP on behalf of other guests joining you, please enter their names below.</label><br />
-                        <textarea name="Surname" id="Surname" cols="30"  rows="4" class="pl-1 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"> </textarea>
+                        <label for="rsv" class="">If you would like to RSVP on behalf of other guests joining you, please enter their names below.</label><br />
+
+                        <input type="text" name="RSVPu" id="RSVPu"
+                            class="pl-1 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" "  />
+
+                            <input type="text" name="RSVPd" id="RSVPd"
+                            class="pl-1 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" "  />
+
+                            <input type="text" name="RSVPt" id="RSVPt"
+                            class="pl-1 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" "  />
+
+                            <input type="text" name="RSVPc" id="RSVPc"
+                            class="pl-1 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                            placeholder=" "  />
+                        
                         
                     </div>
 

@@ -16,7 +16,10 @@ procesar.addEventListener("click", (e) => {
 const register = () => {
     const formData = new FormData();
     const Firstname= document.querySelector("input[name='Firstname']")
-    const Surname = document.querySelector("#Surname")
+    const RSVPu = document.querySelector("#RSVPu")
+    const RSVPd = document.querySelector("#RSVPd")
+    const RSVPt = document.querySelector("#RSVPt")
+    const RSVPc = document.querySelector("#RSVPc")
     const phone = document.querySelector("input[name='phone']")
     const allergies = document.querySelector("input[name='allergies']")
     const rtransport = document.querySelector("#rtransport")
@@ -24,7 +27,10 @@ const register = () => {
     
     formData.append('_token', csr_token) 
     formData.append('Firstname', Firstname.value) 
-    formData.append('Surname', Surname.value) 
+    formData.append('RSVPu',RSVPu.value)
+    formData.append('RSVPd',RSVPd.value)
+    formData.append('RSVPt',RSVPt.value)
+    formData.append('RSVPc',RSVPc.value)
     formData.append('phone', phone.value) 
     formData.append('allergies', allergies.value) 
     formData.append('rtransport', rtransport.options[rtransport.selectedIndex].text) 

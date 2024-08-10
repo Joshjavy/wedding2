@@ -15,12 +15,15 @@ class CreateRegistrosTable extends Migration
     {
         Schema::create('registros', function (Blueprint $table) {
             $table->id();
-            $table->string('firstname');
-            $table->string('Surname');
-            $table->string('Mobile');
-            $table->string('allergies');
-            $table->string('transport');
-            $table->string('song');
+            $table->string('firstname')->nullable();
+            $table->string('RSVPu')->nullable();
+            $table->string('RSVPd')->nullable();
+            $table->string('RSVPt')->nullable();
+            $table->string('RSVPc')->nullable();
+            $table->string('Mobile')->nullable();
+            $table->string('allergies')->nullable();
+            $table->string('transport')->nullable();
+            $table->string('song')->nullable();
             $table->timestamps();
         });
     }
