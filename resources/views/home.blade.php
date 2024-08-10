@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Wedding')
+@section('title', 'Wedding - Anni & Marco')
 
 @section('content')
     <img src="{{ asset('imgs/Desktop/FONDO_desck_Anni_invite_03.jpg') }}"
@@ -161,7 +161,7 @@
 
 
             <div class="py-4 px-5 ">
-                
+
 
                 <form class="max-w-md mx-auto" name="register" action="{{ route('confirmar.asistencia') }}" method="POST"
                     autocomplete="off">
@@ -182,7 +182,7 @@
                     <div class="relative z-0 w-full mb-5 group">
                         <label for="Surname" class="">If you would like to RSVP on behalf of other guests joining you, please enter their names below.</label><br />
                         <textarea name="Surname" id="Surname" cols="30"  rows="4" class="pl-1 block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"> </textarea>
-                        
+
                     </div>
 
                     <div class="relative z-0 w-full mb-5 group">
@@ -224,19 +224,19 @@
             <!--Fin de contenido !-->
             </div>
             {{-- <img src="{{ asset('imgs/Desktop/Recursodesck6_8.png') }}" class="relative z-50 w-5/12	 hojasbtDS" /> --}}
-            
+
             <div class="divhojasbtn" style="position: relative; z-index:99; ">
                 <img src="{{ asset('imgs/Mobile/Recurso_mb_5_8_2.png') }}" class="hojasbtbm w-3/6" />
             </div>
         </div>
-        
+
     </div>
 
 
 @endsection
 @section('script')
     <script>
-        
+
         $(document).ready(function() {
             $('input').attr('autocomplete', 'off');
         });
