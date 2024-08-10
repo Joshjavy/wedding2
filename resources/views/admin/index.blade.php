@@ -21,7 +21,7 @@
     </ul>
   </nav>
   
-    <div class="w-full m-auto sm:w-full md:w-full lg:w-full xl:w-1/3 2xl:w-1/3 ">
+    <div class="w-full m-auto sm:w-full md:w-full lg:w-full xl:w-9/12	 2xl:w-9/12	 ">
         <div class="">
             <table id="table_id" class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
                 <thead>
@@ -38,7 +38,24 @@
                     @forelse ( $registros as $registro )
                         <tr>
                             <td class="px-6 py-4">{{ $registro->firstname }}</td>
-                            <td class="px-6 py-4">{{ $registro->Surname }}</td>
+                            <td class="px-6 py-4">
+                              <ul class="list-none">
+                                @if ($registro->RSVPu!='')
+                                  <li>{{ $registro->RSVPu}}</li>  
+                                @endif
+                                @if ($registro->RSVPd!='')
+                                  <li>{{ $registro->RSVPd}}</li>  
+                                @endif
+                                @if ($registro->RSVPt!='')
+                                  <li>{{ $registro->RSVPt}}</li>  
+                                @endif
+                                @if ($registro->RSVPc!='')
+                                  <li>{{ $registro->RSVPc}}</li>  
+                                @endif
+                              </ul>
+                              
+                            
+                            </td>
                             <td class="px-6 py-4">{{ $registro->Mobile }}</td>
                             <td class="px-6 py-4">{{ $registro->allergies }}</td>
                             <td class="px-6 py-4">{{ $registro->transport }}</td>

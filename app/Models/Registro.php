@@ -11,7 +11,10 @@ class Registro extends Model
     protected $table = 'registros';
     protected $fillable = [
         'firstname',
-        'Surname',
+        'RSVPu',
+        'RSVPd',
+        'RSVPt',
+        'RSVPc',
         'Mobile',
         'allergies',
         'transport',

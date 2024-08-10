@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Wedding - Anni & Marco')
+@section('title', 'Wedding - Anni & Marco - Anni & Marco')
 
 @section('content')
     <img src="{{ asset('imgs/Desktop/FONDO_desck_Anni_invite_03.jpg') }}"

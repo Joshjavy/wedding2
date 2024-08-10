@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Validator;
 use App\Models\Registro;
 class RegistroController extends Controller
 {
+    private $rsvp;
     public function index(){
         return view('home');
     }
@@ -40,11 +41,27 @@ class RegistroController extends Controller
                 'message'=>'Phone number already in use, please try a different one!',
                 ],400);
         }
-        
+
+        if(!empty($request->RSVPu)){
+            $this->rsvp=$request->RSVPu. !empty($request->RSVPd)?'|':(!empty($request->RSVPt)?'|':(!empty($request->RSVPc)?'|':'' ) );
+        }
+        if (!empty($request->RSVPd)){
+            $this->rsvp.=$request->RSVPd. !empty($request->RSVPu)?'|':(!empty($request->RSVPt)?'|':(!empty($request->RSVPc)?'|':'' ) );
+        }
+        if (!empty($request->RSVPt)){
+            $this->rsvp.=$request->RSVPt.'aqui'. !empty($request->RSVPu)?'|':(!empty($request->RSVPd)?'|':(!empty($request->RSVPc)?'|':'' ) );
+        }
+        if (!empty($request->RSVPc)){
+            $this->rsvp.=$request->RSVPc;
+        }
+
         try{
             Registro::create([
                 'firstname'=>$request->Firstname,
-                'Surname'=>$request->Surname,
+                'RSVPu'=>$request->RSVPu,
+                'RSVPd'=>$request->RSVPd,
+                'RSVPt'=>$request->RSVPt,
+                'RSVPc'=>$request->RSVPc,
                 'Mobile'=>$request->phone,
                 'allergies'=>$request->allergies,
                 'transport'=>$request->rtransport,
